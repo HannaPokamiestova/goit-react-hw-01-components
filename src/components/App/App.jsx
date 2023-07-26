@@ -1,5 +1,7 @@
 import Profile from 'components/Profile/Profile';
 import user from 'data/user';
+import Statistics from 'components/Statistics/Statistics';
+import data from 'data/data';
 import css from './App.module.css';
 
 export const App = () => {
@@ -12,6 +14,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
